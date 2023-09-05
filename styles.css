@@ -1,8 +1,6 @@
 body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 #thumbnailList img {
@@ -17,4 +15,112 @@ body {
 
 .border {
     border: 2px solid pink;
+}
+#main {
+    display: flex;
+    align-items: center; /* This ensures vertical alignment */
+}
+
+.description-box {
+    background-color: white;
+    margin-left: 20px; /* Space between the image and the description */
+    padding: 10px;     /* Inner padding for the text */
+    width: 300px;      /* Set a fixed width or adjust as needed */
+    height: auto;      /* Adjust based on the content */
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for a lifted effect */
+}
+/* css for the nav bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/*   grid css*/
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
+.cell {
+
+    padding: 20px;
+    text-align: center;
+}
+
+
+.text-line {
+    text-align: center;
+    margin: 10px 0; /* Top and bottom margin for the text */
+}
+
+.below-image3 {
+    display: block;
+    margin: 10px auto; /* Top and bottom margin, auto for left-right centering */
+    width: 50%;
+    padding-top: 50px;
+}
+.below-image {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: 100px;
+}
+.custom-bullets {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.custom-bullets li:nth-child(1) {
+    background-image: url('media/phone.png');
+    /* ... other styles ... */
+}
+
+.custom-bullets li:nth-child(2) {
+    background-image: url('media/mail.png');
+    /* ... other styles ... */
+}
+
+.custom-bullets li:nth-child(3) {
+    background-image: url('media/location.png');
+    /* ... other styles ... */
+}
+
+/* Shared styles for the list items */
+.custom-bullets li {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 0% 50%;
+    padding-left: 30px;
 }
